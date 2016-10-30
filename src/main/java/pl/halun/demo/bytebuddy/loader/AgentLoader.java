@@ -1,4 +1,4 @@
-package pl.halun.demo.bytebuddy.agent;
+package pl.halun.demo.bytebuddy.loader;
 
 import java.io.File;
 
@@ -11,7 +11,7 @@ public class AgentLoader {
 					.println("Please provide process id and path to agent jar");
 			System.exit(-1);
 		}
-
+		
 		ByteBuddyAgent.attach(new File(args[1]), args[0]);
 	}
 }
